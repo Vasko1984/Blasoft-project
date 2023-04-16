@@ -1,0 +1,120 @@
+.dashboard1{
+    display: flex;
+   margin-left:30px;
+   font-size: small;
+   font-family: sans-serif;
+   padding: 10px;
+   /* width: 300px; */
+   margin-right: 0;
+}
+.styled-button{
+ position: absolute;
+    top: 20px;
+    right: 30px;
+  
+}
+.styled-button button{
+    font-size: 10px;
+    padding-left: 5px;
+}
+.dash{
+    background-color: lightgrey;
+}
+.info{
+    background-color: rgb(179, 218, 233);
+    width: 1250px;
+    height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  border-left: 2px solid rgb(95, 95, 197);
+  margin-top: 30px;
+}
+.info1{
+    display: flex;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+.info2{
+    display: flex;
+    margin-left: 140px;
+   
+}
+.info3{
+    display: flex;
+    margin-left: 105px;
+    margin-top: -41px;
+}
+
+.h5{
+    color: rgb(18, 171, 218);
+   margin-left: 5px;
+}
+.h5info{
+    color: grey;
+    margin-left: 5px;
+}
+.button2 {
+    width:65px;
+height:15px;
+font-size: 10px;
+border: none;
+color: white;
+background-color: gray;
+border-radius: 10px;
+margin-top: 25px;
+margin-left: 10px;
+}
+.styled-button1{
+    width: 120px;
+    height: 15px;
+    border: none;
+    color: white;
+    font-size: 10px;
+    background-color: rgb(65, 65, 210);
+    margin-top: 25px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+.info4{
+    
+    width: 1250px;
+    height: 350px;
+  margin-left: auto;
+  margin-right: auto;
+ border: 1px solid grey;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.info5{
+   height: 50px;
+   background-color: lightgrey;
+   display: flex;
+ 
+   font-size: small;
+   font-family: sans-serif;
+   padding: 10px;
+
+}
+.footer{
+    height: 30px;
+    background-color: lightgray;
+    
+}
+.footer h4{
+    padding-left: 30px;
+    padding-top: 5px;
+    font-size: small;
+    color: rgb(87, 84, 84);
+}
+.table-container{
+    width: 1200px !important;
+    height: 200px;
+    margin-top: 20px;
+    border: 1px solid gray;
+}
+.css-11xur9t-MuiPaper-root-MuiTableContainer-root{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
