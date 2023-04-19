@@ -8,6 +8,7 @@ import SelectedRecord from "./components/SelectedRecord";
 import TrucksOnTheRoad from "./components/TrucksOnTheRoad";
 import TruckDetails from "./components/TruckDetails";
 import TitleOfTheTask from "./components/TitleOfTheTask";
+import SelectForm from "./components/SelectForm";
 function App() {
   return (
     <div>
