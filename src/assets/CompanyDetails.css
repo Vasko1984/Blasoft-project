@@ -1,0 +1,54 @@
+.nazad-na-lista{
+  width:140px;
+  height: 30px;
+    color: white;
+    border: none;
+    border-radius: 2px;
+color: white;
+position: absolute;
+right: 30px;
+text-align: center;
+text-decoration: none;
+margin-top: 10px;
+background-color: rgb(70, 70, 162);
+
+}
+.detali{
+    margin-left: 10px;
+}
+.email{
+    display: flex;
+    justify-content: end;
+    margin: 20px;
+}
+.email h4{
+   
+    font-weight: 300;
+    font-family: 'Times New Roman', Times, serif;
+    margin-right: 30px;
+  margin-top: 15 !important;
+    margin-bottom: 15px;
+}
+.input3{
+    width: 800px;
+    height: 10px;
+}
+
+
+
+.css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input{
+    width: 2rem;
+    text-align: center;
+}
+.transport{
+  padding-left:220px;
+  font-family: 'Times New Roman', Times, serif;
+padding-top: 30px;
+
+}
+.box{
+ padding-left: 475px;
+ margin-top: -45px;
+margin-bottom: 30px;
+}
+  

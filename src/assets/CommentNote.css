@@ -1,0 +1,40 @@
+.div-styled2{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 90%;
+     background-color: lightgray;
+}
+.dodaj-nov-komentar{
+    position: absolute;
+    right: 20px;
+    margin-top: 10px;
+}
+
+
+.styled-button2{
+    position: absolute;
+    top: 20px;
+    right: 90px;
+}
+.comment-card{
+    width: 500px;
+    height: 150px;
+    border: 1px solid gray;
+    border-radius: 2px;
+    position: absolute;
+    bottom: -210px;
+    margin-left: 20px;
+  
+
+}
+.comment-card p{
+    margin-left: 10px;
+}
+.comment-paragraph{
+    position: absolute;
+    bottom: 0;
+background-color: lightgrey;
+width: 500px;
+padding: 0;
+}
