@@ -13,8 +13,8 @@ function createData(name, calories, fat) {
 }
 
 const rows = [
-  createData("Frozen yoghurt", 159, 6.0, 4.0),
-  createData("Ice cream sandwich", 237, 9.0, 4.3),
+  createData("truck1", 159, 6.0, 4.0),
+  createData("truck2", 237, 9.0, 4.3),
 ];
 
 const BasicTable1 = () => {

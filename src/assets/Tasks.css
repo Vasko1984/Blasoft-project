@@ -1,0 +1,29 @@
+.sidebar{
+    position: absolute;
+    left: 30px;
+    top: 50px;
+    width: 230px;
+    height: 550px;
+    background-color: lightblue;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    /* display: flex; */
+    text-decoration: none;
+    border-radius: 2px;
+}
+
+.sidebar-name{
+margin-top:-21px;
+padding-left: 50px;
+color: rgb(46, 90, 117);
+list-style-type: none;
+}
+
+.table-container1{
+     width: 900px;
+    height: 1000px; 
+    border: 1px solid gray;
+    position: absolute;
+    right: 30px;
+} 
+
