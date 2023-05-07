@@ -1,0 +1,29 @@
+.box1{
+    padding-left: 330px;
+    margin-top: -45px;
+   margin-bottom: 30px;
+   }
+   .destinacija{
+    margin-top: 40px;
+    margin-left: 90px;
+    font-weight: 300;
+    font-family: 'Times New Roman', Times, serif;
+ 
+   }
+   .zacuvaj{
+    width:100px;
+    height: 30px;
+      color: white;
+      border: none;
+      border-radius: 2px;
+  color: white;
+ 
+  margin-left: 1000px;
+  bottom: 150px;
+  text-align: center;
+  text-decoration: none;
+
+  background-color: rgb(70, 70, 162);
+ 
+  
+   }

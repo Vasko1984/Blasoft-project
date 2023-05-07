@@ -63,7 +63,9 @@ const TruckDetails = () => {
         />
         <h3>Коментари (историјат на Патувањето)</h3>
         <div>
+          <a href="/lastcomments">
           <Button variant="contained">Додај нов Коментар</Button>
+            </a>
         </div>
       </div>
     </div>

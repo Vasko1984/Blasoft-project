@@ -1,0 +1,50 @@
+.summary{
+    display:flex;
+    padding-left: 30px;
+    background-color: rgb(225, 223, 223);
+  
+}
+
+
+.prikazi{
+    width: 80px;
+    height: 30px;
+    background-color: rgb(90, 169, 195);
+    color: white;
+    border: none;
+    border-radius: 2px;
+    margin-top: 25px;
+}
+
+
+.wrapper{
+    background-color: rgb(225, 223, 223) ;
+    font-size: medium;
+  height: 50px;
+  width: 1200px;
+} 
+.wrapper h2{
+    font-size: medium;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+     padding-top: 15px; 
+    padding-left: 30px;
+}
+.css-1oqqzyl-MuiContainer-root {
+    width: 100%;
+    margin-left: auto;
+    box-sizing: border-box;
+    margin-right: auto;
+    display: block;
+    /* padding-left: 16px; */
+    padding-right: 16px;
+}
+
+
+
+.tovareni{
+    font-size: 400;
+    font-weight: 300;
+    color: gray;
+    padding-left: 25px;
+}

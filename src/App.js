@@ -19,7 +19,21 @@ import DetailsOfTheTask from "./components/DetailsOfTheTask";
 import UnloadedTrucks from "./components/UnloadedTrucks";
 import TaskForm from "./components/TaskForm";
 import Transporters from "./components/Transporters";
+import AllDestinations from "./components/AllDestinations";
+import EditDestination from "./components/EditDestination";
+import Companies from "./components/Companies";
+import EditCompany from "./components/EditCompany";
+import { useState } from "react";
+import StatisticAndReport from "./components/StatisticAndReport";
+import StatisticAndSummary from "./components/StatisticAndSummary";
+
 function App() {
+  const [token, setToken] = useState();
+
+  // if (!token) {
+  //   return <LandingPage setToken={setToken} />;
+  // }
+
   return (
     <div>
       <BrowserRouter>
@@ -46,6 +60,12 @@ function App() {
           <Route path="/unloadedtrucks" element={<UnloadedTrucks />} />
           <Route path="/taskform" element={<TaskForm />} />
           <Route path="/transporters" element={<Transporters />} />
+          <Route path="/alldestinations" element={<AllDestinations />} />
+          <Route path="/editdestination" element={<EditDestination />} />
+          <Route path="/companies" element={<Companies />} />
+          <Route path="/editcompany" element={<EditCompany />} />
+          <Route path="/statisticandreport" element={<StatisticAndReport/>}/>
+          <Route path="/statisticandsummary" element={<StatisticAndSummary/>}/>
         </Routes>
       </BrowserRouter>
     </div>

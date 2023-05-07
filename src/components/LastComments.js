@@ -9,6 +9,7 @@ import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 import { Container } from "@mui/material";
 
+
 const rows = [
   createData("ИСТОВАРЕНО НА ", "02.11.2022"),
   createData("ИСТОВАРЕНО НА ", "02.11.2022"),
@@ -24,6 +25,7 @@ function createData(name, time) {
   return { name, time };
 }
 const LastComments = () => {
+
   return (
     <Container>
       <div className="info5">
@@ -57,17 +59,20 @@ const LastComments = () => {
               </TableHead>
               <TableBody>
                 {rows.map((row) => (
+                 
                   <TableRow
+                 
                     key={row.name}
                     sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
                   >
-                    <TableCell component="th" scope="row">
+                    <TableCell component="th" scope="row" >
                       {row.name}
                     </TableCell>
                     <TableCell component="th" scope="row">
                       {row.time}
                     </TableCell>
                   </TableRow>
+                
                 ))}
               </TableBody>
             </Table>

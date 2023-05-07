@@ -13,6 +13,21 @@ margin-top: 10px;
 background-color: rgb(70, 70, 162);
 
 }
+.nazad-na-lista2{
+  width:140px;
+  height: 30px;
+    color: white;
+    border: none;
+    border-radius: 2px;
+color: white;
+position: absolute;
+right: 100px;
+text-align: center;
+text-decoration: none;
+margin-top: 10px;
+background-color: rgb(70, 70, 162);
+
+}
 .detali{
     margin-left: 10px;
 }
