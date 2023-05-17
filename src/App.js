@@ -26,6 +26,11 @@ import EditCompany from "./components/EditCompany";
 import { useState } from "react";
 import StatisticAndReport from "./components/StatisticAndReport";
 import StatisticAndSummary from "./components/StatisticAndSummary";
+import DropDown from "./components/DropDown";
+
+
+
+
 
 function App() {
   const [token, setToken] = useState();
@@ -66,6 +71,7 @@ function App() {
           <Route path="/editcompany" element={<EditCompany />} />
           <Route path="/statisticandreport" element={<StatisticAndReport/>}/>
           <Route path="/statisticandsummary" element={<StatisticAndSummary/>}/>
+       <Route path="/dropdown" element={<DropDown/>}/>
         </Routes>
       </BrowserRouter>
     </div>

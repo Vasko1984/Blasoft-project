@@ -27,18 +27,18 @@ const AllDestinations = () => {
       <div className="info5">
         <FaMapMarkerAlt
           style={{
-            width: "20px",
-            height: "20px",
+            width: "30px",
+            height: "30px",
             marginRight: "15px",
-            paddingTop: "15px",
+            // paddingTop: "15px",
           }}
         />
         <h2>Сите Дестинации (193)</h2>
-        <button className="dodaj-nova">
+        <button className="dodaj-nova" style={{marginTop:"-5px"}}>
           <HiOutlinePlusCircle
             style={{
               paddingRight: "5px",
-              marginBottom: "-3px",
+              marginBottom: "5px",
               Color: "white",
             }}
           />

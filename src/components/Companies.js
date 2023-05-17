@@ -19,15 +19,15 @@ const Companies = () => {
       <div className="info5">
         <FaUserAlt
           style={{
-            width: "20px",
-            height: "20px",
+            width: "25px",
+            height: "25px",
             marginRight: "15px",
-            paddingTop: "15px",
+            paddingTop:"5px"
           }}
         />
         <h2>Сите Фирми (193)</h2>
         <a href="/editcompany">
-          <button className="dodaj-nova">
+          <button className="dodaj-nova" style={{marginTop:"-6px"}}>
             <HiOutlinePlusCircle
               style={{
                 paddingRight: "5px",

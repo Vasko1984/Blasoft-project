@@ -1,7 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import Logo from "../pictures/pexels-wallace-chuck-3081173.jpg";
 import "../assets/ResetPassword.css";
 const ResetPassword = () => {
+
+
+
+ 
+
+
   return (
     <div>
       <div className="h1">
@@ -14,10 +20,11 @@ const ResetPassword = () => {
       <div className="h">
         <h3>Ресетирање на лозинката</h3>
       </div>
-      <form className="form1">
+      <form className="form1" >
         <div>
           <label htmlFor="email" />
           <input
+          
             type="email"
             id="email"
             placeholder="емаил"

@@ -8,6 +8,7 @@ import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 import "../assets/TrucksOnTheRoad.css";
+import { Container } from "@mui/material";
 function createData(name, calories, fat, carbs, protein) {
   return { name, calories, fat, carbs, protein };
 }
@@ -22,16 +23,16 @@ const rows = [
 
 const TrucksOnTheRoad = () => {
   return (
-    <div>
-      <div className="info5">
+    <Container>
+      <div className="info5" style={{marginBottom:"40px"}}>
         <FaTruckMoving
           style={{ width: "50px", marginTop: "20px", rotate: "360deg" }}
         />
         <h2>Возила на пат (Сите товарени возила)</h2>
       </div>
-      <div className="table">
+    
         <TableContainer component={Paper}>
-          <Table sx={{ minWidth: 650 }} aria-label="simple table">
+          <Table  sx={{ minWidth: 450 }} aria-label="simple table">
             <TableHead>
            
             </TableHead>
@@ -53,8 +54,8 @@ const TrucksOnTheRoad = () => {
             </TableBody>
           </Table>
         </TableContainer>
-      </div>
-    </div>
+      
+    </Container>
   );
 };
 

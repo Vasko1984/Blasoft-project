@@ -6,52 +6,55 @@ import { FaTruckMoving } from "react-icons/fa";
 import BasicTable from "./BasicTable";
 const SelectedRecord = () => {
   return (
-    <>
-      <div className="dash">
-        <div className="dashboard1">
-          <FaListAlt
-            style={{ marginLeft: -10, marginTop: 20, marginRight: 10 }}
-          />
-          <h2>Prikazana zadaca: Terasteel</h2>
-        </div>
-        <BasicButtonGroup />
+    
+      <><div className="dash">
+      <div className="dashboard1">
+        <FaListAlt
+          style={{ marginLeft: -10, marginTop: 20, marginRight: 10 }} />
+        <h2>Prikazana zadaca: Terasteel</h2>
       </div>
-      <div className="info">
-        <div className="info1">
+      <BasicButtonGroup />
+    </div>
+    <div className="info">
+        <div className="informacii">
           <h5>Информации за Задачата :</h5>
-          <h5 className="h5">Промена на понуда</h5>
+          <h5 className="ponuda">Промена на понуда</h5>
         </div>
-        <div className="info2">
+        <div className="informacii2">
           <h5>наслов :</h5>
-          <h5 className="h5info">Terrasteel Leskovac</h5>
+          <h5 className="terasteel">Terrasteel Leskovac</h5>
         </div>
-        <div className="info3">
-          <h5>креирано на :</h5>
-          <h5 className="h5info">четврток,04/04/2022</h5>
+
+        <div className="informacii2">
+          <h5>Креирано на :</h5>
+          <h5 className="terasteel">четвртоk 22.04.2023</h5>
         </div>
-        <div className="info3">
+
+        <div className="informacii2">
           <h5>Дестинација :</h5>
-          <h5 className="h5info">Leskovac</h5>
+          <h5 className="terasteel">Лесковац и Врање</h5>
         </div>
-        <div className="info3">
-          <h5>firma :</h5>
-          <h5 className="h5info">Terrasteel</h5>
+        <div className="informacii2">
+          <h5>Фирма :</h5>
+          <h5 className="terasteel">Terrasteel</h5>
         </div>
-        <div className="info3">
-          <h5>Број на возила:</h5>
-          <h5 className="h5info">2</h5>
+        <div className="informacii2">
+          <h5>Број на Возила :</h5>
+          <h5 className="terasteel">2</h5>
         </div>
-        <div className="info3">
+
+        <div className="informacii2">
           <h5>Додатни информации :</h5>
-          <h5 className="h5info">utovar ponedelnik 05/04/2022</h5>
+          <h5 className="terasteel">utovar denes/utre</h5>
         </div>
-        <div className="info3">
-          <h5>Испратена до :</h5>
-          <h5 className="h5info">euro steel </h5>
-          <button className="button2">Pobarano:2</button>
-          <button className="button2">Ponudeno:2</button>
+
+        <div className="informacii2">
+          <h5>Испратено до :</h5>
+          <h5 className="terasteel">Fersped AD Skopje</h5>
+          <button className="ponudeno1">ponudeno 2</button>
+          <button className="ponudeno2">isprateno 2</button>
         </div>
-        <div className="info3">
+        <div className="informacii2"> 
           <h5>Затворена на :</h5>
           <button
             variant="contained"
@@ -71,8 +74,8 @@ const SelectedRecord = () => {
         <div className="footer">
           <h4>Товарени/Потребни камиони : 0/2</h4>
         </div>
-      </div>
-    </>
+      </div></>
+    
   );
 };
 

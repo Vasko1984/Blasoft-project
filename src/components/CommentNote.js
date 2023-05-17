@@ -7,14 +7,14 @@ import "../assets/CommentNote.css";
 
 const CommentNote = () => {
   return (
-    <Container style={{ border: "1px solid gray", height: "900px" }}>
+     <Container >
       <div>
         <div className="dash">
           <div className="dashboard1">
             <GrBladesVertical
               style={{
                 marginLeft: -10,
-                marginTop: 15,
+                marginTop: 8,
                 marginRight: 10,
                 width: "25px",
                 height: "25px",
@@ -24,7 +24,7 @@ const CommentNote = () => {
           </div>
           <div className="styled-button2">
             <a href="selectedrecord">
-              <Button variant="contained">
+              <Button variant="contained" >
                 <GrBladesVertical style={{ marginRight: 5 }} /> Назад
               </Button>
             </a>
@@ -36,27 +36,27 @@ const CommentNote = () => {
         <div className="div-styled">
           <div>
             <h3>Регистрација</h3>
-            <p>LE 2345</p>
+            <p style={{marginTop:10}}>LE 2345</p>
           </div>
           <div>
             <h3>Компанија </h3>
-            <p>Фершпед АД Скопје</p>
+            <p style={{marginTop:10}}>Фершпед АД Скопје</p>
           </div>
           <div>
             <h3>Термин на утовар</h3>
-            <p> петок 04.02.2022 10:00</p>
+            <p style={{marginTop:10}}> петок 04.02.2022 10:00</p>
           </div>
           <div>
             <h3>Товарено </h3>
-            <p>петок 04.02.2022 12;31</p>
+            <p style={{marginTop:10}}>петок 04.02.2022 12;31</p>
           </div>
           <div>
             <h3>Истоварен на</h3>
-            <p>петок 04.02.2022 12;31</p>
+            <p style={{marginTop:10}}>петок 04.02.2022 12;31</p>
           </div>
           <div>
             <h3>Причина за промена</h3>
-            <p>ПРОБИЕНА ЦЕРАДА НА ОТКАЗАНОТО ВОЗИЛО ...</p>
+            <p style={{marginTop:10}}>ПРОБИЕНА ЦЕРАДА НА ОТКАЗАНОТО ВОЗИЛО ...</p>
           </div>
         </div>
         <div className="div-styled2">

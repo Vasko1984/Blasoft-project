@@ -14,7 +14,13 @@ import {
   TableRow,
 } from "@mui/material";
 import { HiOutlinePencilSquare } from "react-icons/hi2";
-const Transporters = () => {
+const Transporters = ()=> {
+  // const [list, setList] = React.useState();
+  // function handleRemove(id) {
+  //   const newList = list.filter((item) => item.id !== id);
+
+  //   setList(newList);
+  // }
   return (
     <Container>
       <div className="info5">
@@ -63,6 +69,7 @@ const Transporters = () => {
                   </button>
                 </a>
                 <button
+                //  onClick={() => handleRemove(item.id)}
                   style={{
                     marginLeft: "5px",
                     backgroundColor: "red",

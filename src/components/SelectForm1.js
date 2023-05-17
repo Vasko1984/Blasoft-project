@@ -23,6 +23,12 @@ const SelectForm = () => {
         <MenuItem value={10} className="green">
           Товарено
         </MenuItem>
+        <Select>
+          <MenuItem>1</MenuItem>
+          <MenuItem>2</MenuItem>
+          <MenuItem>3</MenuItem>
+          <MenuItem>4</MenuItem>
+          </Select>
         <MenuItem value={20} className="red">
           Нетоварено
         </MenuItem>
