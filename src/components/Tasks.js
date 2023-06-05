@@ -2,10 +2,11 @@ import React from "react";
 import { IoSpeedometer } from "react-icons/io5";
 import "../assets/Tasks.css";
 import { GrTasks } from "react-icons/gr";
-import { FaMapMarkerAlt, FaTruckMoving } from "react-icons/fa";
+import { FaList, FaMapMarkerAlt, FaTruckMoving, FaUserCircle } from "react-icons/fa";
 import { MdWork } from "react-icons/md";
 import { AiOutlineBarChart } from "react-icons/ai";
 import {
+  Container,
   Paper,
   Table,
   TableCell,
@@ -14,48 +15,65 @@ import {
   TableRow,
 } from "@mui/material";
 import { HiOutlinePencilSquare } from "react-icons/hi2";
+import { RiDeleteBin6Line } from "react-icons/ri";
+import { useNavigate } from "react-router-dom";
 const Tasks = () => {
+
+  const LogOut =()=> {
+    localStorage.clear();
+    window.location.href = '/';
+};
+const navigate = useNavigate();
+
+
   return (
-    <div>
+   
+    <Container>
+      <div >
+        <FaUserCircle style={{position:"absolute",right:"20px",width:"30px",height:"30px",marginBottom:"30px",marginTop:"20px",cursor:"pointer"}} onClick={LogOut}/>
+      </div>
       <div className="sidebar">
         <IoSpeedometer
           style={{ marginTop: "30px", marginLeft: "20px", color: "blue" }}
         />
-        <a href="/">
-          <h4 className="sidebar-name">Контролна табла</h4>
-        </a>
+       
+          <h4 className="sidebar-name" onClick={() => navigate("/truckdetails")}>Контролна табла</h4>
+      
 
         <GrTasks style={{ marginLeft: "20px", color: "blue" }} />
-        <a href="/">
-          <h4 className="sidebar-name">Задачи</h4>
-        </a>
+       
+          <h4 className="sidebar-name" onClick={() => navigate("/taskform")}>Задачи</h4>
+     
         <FaTruckMoving style={{ marginLeft: "20px", color: "blue" }} />
-        <a href="/">
-          <h4 className="sidebar-name">Транспортери</h4>
-        </a>
+       
+          <h4 className="sidebar-name"onClick={() => navigate("/transporters")}>Транспортери</h4>
+      
         <FaMapMarkerAlt style={{ marginLeft: "20px", color: "blue" }} />
-        <a href="/">
-          <h4 className="sidebar-name">Дестинации</h4>
-        </a>
+     
+          <h4 className="sidebar-name" onClick={() => navigate("/statisticandreport")}>Дестинации</h4>
+      
         <MdWork style={{ marginLeft: "20px", color: "blue" }} />
-        <a href="/">
-          <h4 className="sidebar-name">Фирми</h4>
-        </a>
+     
+          <h4 className="sidebar-name" onClick={() => navigate("/companies")}>Фирми</h4>
+       
         <AiOutlineBarChart style={{ marginLeft: "20px", color: "blue" }} />
-        <a href="/">
-          <h4 className="sidebar-name">Статистика</h4>
-        </a>
+       
+          <h4 className="sidebar-name" onClick={() => navigate("/statisticandreport")}>Статистика</h4>
+       
       </div>
-      <div className="table-container1">
+      <div className="site-zadaci">
+          <FaList style={{ width: "30px",height:"30px",marginRight:"20px",marginLeft:"20px",marginTop:"10px" }} />
+          <h4 style={{paddingTop:"10px"}}>Сите задачи ()</h4>
+          </div>
         <TableContainer
-          component={Paper}
-          style={{
-            width: "90%",
-            position: "absolute",
-            right: "20px",
-            left: "20px",
-            top: "70px",
-          }}
+           component={Paper}
+           style={{
+             width: "70%",
+             position: "absolute",
+             right: "20px",
+            // left: "20px",
+           top: "170px",
+           }}
         >
           <Table>
             <TableHead>
@@ -76,9 +94,9 @@ const Tasks = () => {
                 <TableCell> petok,03.03.2022 </TableCell>
                 <TableCell>vo tek </TableCell>
                 <TableCell>
-                  <HiOutlinePencilSquare />
-                  Покажи
-                  <button>Избриши</button>
+                  
+                 <button style={{width:"90px"}}> <HiOutlinePencilSquare /> Покажи</button>
+                  <button><RiDeleteBin6Line/>Избриши</button>
                 </TableCell>
               </TableRow>
               <TableRow>
@@ -89,9 +107,8 @@ const Tasks = () => {
                 <TableCell> petok,03.03.2022 </TableCell>
                 <TableCell>vo tek </TableCell>
                 <TableCell>
-                  <HiOutlinePencilSquare />
-                  Покажи
-                  <button>Избриши</button>
+                <button  style={{width:"90px"}}> <HiOutlinePencilSquare /> Покажи</button>
+                  <button><RiDeleteBin6Line/>Избриши</button>
                 </TableCell>
               </TableRow>
               <TableRow>
@@ -102,9 +119,8 @@ const Tasks = () => {
                 <TableCell> petok,03.03.2022 </TableCell>
                 <TableCell>vo tek </TableCell>
                 <TableCell>
-                  <HiOutlinePencilSquare />
-                  Покажи
-                  <button>Избриши</button>
+                <button  style={{width:"90px"}}> <HiOutlinePencilSquare  /> Покажи</button>
+                  <button><RiDeleteBin6Line/>Избриши</button>
                 </TableCell>
               </TableRow>
               <TableRow>
@@ -115,9 +131,8 @@ const Tasks = () => {
                 <TableCell> petok,03.03.2022 </TableCell>
                 <TableCell>vo tek </TableCell>
                 <TableCell>
-                  <HiOutlinePencilSquare />
-                  Покажи
-                  <button>Избриши</button>
+                <button  style={{width:"90px"}}> <HiOutlinePencilSquare /> Покажи</button>
+                  <button><RiDeleteBin6Line/>Избриши</button>
                 </TableCell>
               </TableRow>
               <TableRow>
@@ -128,9 +143,8 @@ const Tasks = () => {
                 <TableCell> petok,03.03.2022 </TableCell>
                 <TableCell>vo tek </TableCell>
                 <TableCell>
-                  <HiOutlinePencilSquare />
-                  Покажи
-                  <button>Избриши</button>
+                <button  style={{width:"90px"}}><HiOutlinePencilSquare /> Покажи</button>
+                  <button><RiDeleteBin6Line/>Избриши</button>
                 </TableCell>
               </TableRow>
               <TableRow>
@@ -141,16 +155,15 @@ const Tasks = () => {
                 <TableCell> petok,03.03.2022 </TableCell>
                 <TableCell>vo tek </TableCell>
                 <TableCell>
-                  <HiOutlinePencilSquare />
-                  Покажи
-                  <button>Избриши</button>
+                <button  style={{width:"90px"}}><HiOutlinePencilSquare /> Покажи</button>
+                  <button > <RiDeleteBin6Line/>Избриши</button>
                 </TableCell>
               </TableRow>
             </TableHead>
           </Table>
         </TableContainer>
-      </div>
-    </div>
+       
+     </Container>
   );
 };
 

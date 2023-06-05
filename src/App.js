@@ -27,6 +27,7 @@ import { useState } from "react";
 import StatisticAndReport from "./components/StatisticAndReport";
 import StatisticAndSummary from "./components/StatisticAndSummary";
 import DropDown from "./components/DropDown";
+import SelectForm from "./components/SelectForm";
 
 
 
@@ -71,7 +72,7 @@ function App() {
           <Route path="/editcompany" element={<EditCompany />} />
           <Route path="/statisticandreport" element={<StatisticAndReport/>}/>
           <Route path="/statisticandsummary" element={<StatisticAndSummary/>}/>
-       <Route path="/dropdown" element={<DropDown/>}/>
+       <Route path="/selectform" element={<SelectForm/>}/>
         </Routes>
       </BrowserRouter>
     </div>

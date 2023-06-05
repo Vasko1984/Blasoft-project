@@ -9,6 +9,7 @@ import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 import "../assets/TrucksOnTheRoad.css";
 import { Container } from "@mui/material";
+import { useNavigate } from "react-router-dom";
 function createData(name, calories, fat, carbs, protein) {
   return { name, calories, fat, carbs, protein };
 }
@@ -22,11 +23,12 @@ const rows = [
 ];
 
 const TrucksOnTheRoad = () => {
+  const navigate = useNavigate();
   return (
     <Container>
       <div className="info5" style={{marginBottom:"40px"}}>
         <FaTruckMoving
-          style={{ width: "50px", marginTop: "20px", rotate: "360deg" }}
+          style={{ width: "35px",height:"35px", marginRight:"20px" }}
         />
         <h2>Возила на пат (Сите товарени возила)</h2>
       </div>
@@ -39,6 +41,8 @@ const TrucksOnTheRoad = () => {
             <TableBody>
               {rows.map((row) => (
                 <TableRow
+                onClick={() => navigate("/truckdetails")}
+                style={{cursor:"pointer"}}
                   key={row.name}
                   sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
                 >

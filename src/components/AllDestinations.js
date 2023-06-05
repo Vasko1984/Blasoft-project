@@ -24,7 +24,7 @@ const AllDestinations = () => {
   };
   return (
     <Container>
-      <div className="info5">
+      <div className="dodaj-nova1">
         <FaMapMarkerAlt
           style={{
             width: "30px",
@@ -34,6 +34,7 @@ const AllDestinations = () => {
           }}
         />
         <h2>Сите Дестинации (193)</h2>
+        <a href="/companydetails">
         <button className="dodaj-nova" style={{marginTop:"-5px"}}>
           <HiOutlinePlusCircle
             style={{
@@ -44,6 +45,7 @@ const AllDestinations = () => {
           />
           Додај нова
         </button>
+        </a>
       </div>
       <TableContainer style={{ marginTop: "30px" }} component={Paper}>
         <Table sx={{ minWidth: 650 }} aria-label="simple table">

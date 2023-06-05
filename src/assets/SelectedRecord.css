@@ -10,7 +10,7 @@
 .styled-button{
  position: absolute;
     top: 20px;
-    right: 30px;
+    right: 100px;
   
 }
 .styled-button button{
@@ -28,6 +28,7 @@
   margin-right: auto;
   border-left: 2px solid rgb(95, 95, 197);
   margin-top: 30px;
+  padding-left: 20px;
 }
 .informacii{
     display: flex;
@@ -61,7 +62,7 @@ border: none;
 color: white;
 background-color: gray;
 border-radius: 10px;
-margin-top: 25px;
+ margin-top: 8px; 
 margin-left: 10px;
 }
 .styled-button1{
@@ -98,7 +99,7 @@ margin-left: 10px;
 .footer{
     height: 30px;
     background-color: lightgray;
-    
+
 }
 .footer h4{
     padding-left: 30px;

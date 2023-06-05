@@ -2,48 +2,45 @@ import React from "react";
 import Logo from "../pictures/pexels-wallace-chuck-3081173.jpg";
 import "../assets/LandingPage.css";
 import { useState } from "react";
-// import { PropTypes } from "prop-types";
-// ("http:d2ef-77-29-32-192.ngrok-free.app");
-async function loginUser(credentials) {
-  return {
-    "id": "i157452747",
-    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJPbmxpbmUgSldUIEJ1aWxkZXIiLCJpYXQiOjE2ODMzMDY4NzcsImV4cCI6MTcxNDg0Mjg3NywiYXVkIjoid3d3LmV4YW1wbGUuY29tIiwic3ViIjoidmFza29AbWFpbC5jb20iLCJHaXZlbk5hbWUiOiJKb2hubnkiLCJTdXJuYW1lIjoiUm9ja2V0IiwiRW1haWwiOiJ2YXNrb0BtYWlsLmNvbSIsIlJvbGUiOlsiTWFuYWdlciIsIlByb2plY3QgQWRtaW5pc3RyYXRvciJdfQ.5yFFOwl2yuKq8Od6K-GkqW_KCKxZPnVH776JYgcngvo"
-};
-  fetch(
-    `https://d2ef-77-29-32-192.ngrok-free.app/login?` +
-      new URLSearchParams({
-        username: credentials.username,
-        password: credentials.password,
-      }),{method:"GET",
-      mode:"cors"
-    }
-    // `https://api.liberty-transport.techup.me/LogIn?email=${username}%40yahoo.com&password=${password}`,
-    // {
-    //   method: `GET`,
-    //   "Content-Type": "application/json",
-    //   mode: "no-cors"}
-  )
-    .then((data) => {
-      console.log("ok",data);
-      return data.json()})
-    .catch((error) => console.log(error));
-}
 
-const LandingPage = ({ setToken }) => {
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
 
-  const handleSubmit = async (e) => {
-    console.log("vlex");
+
+const LandingPage = () => {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
+  const handleLogin = async (e) => {
     e.preventDefault();
-    const res = await loginUser({
-      username,
-      password,
-    });
-    // console.log(token);
-    localStorage.setItem("user",res.token );
-    
-    // setToken(token);
+    setIsLoading(true);
+
+    // Perform input validation
+
+    try {
+      const response = await fetch('/api/login', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email, password }),
+      });
+
+      if (response.ok) {
+        // Login successful
+        const { token } = await response.json();
+
+        // Store token in local storage
+        localStorage.setItem('token', token);
+
+        // Redirect or update UI
+      } else {
+        // Login failed
+        // Handle error or show error message
+      }
+    } catch (error) {
+      // Handle network or server errors
+    }
+
+    setIsLoading(false);
   };
 
   return (
@@ -51,22 +48,22 @@ const LandingPage = ({ setToken }) => {
       <div className="h1">
         <img src={Logo} alt="something" className="img" />
 
-        <div>
+      </div>
+        <div style={{paddingTop:"15px",paddingBottom:"15px",paddingLeft:"582px"}}>
           <h1>LIBERTY</h1>
         </div>
-      </div>
       <div className="h3">
-        <h3>Избери нова лозинка</h3>
+        <h3>Добредојдовте Назад</h3>
       </div>
-      <div className="form">
+      <form className="form"  onSubmit={handleLogin}>
         <div>
           <label htmlFor="email" />
           <input
             type="email"
             id="email"
-            value={username}
-            onChange={(event) => setUsername(event.target.value)}
-            placeholder="нова лозинка"
+            value={email}
+            onChange={(event) => setEmail(event.target.value)}
+            placeholder="емаил"
             className="input"
           />
         </div>
@@ -77,17 +74,18 @@ const LandingPage = ({ setToken }) => {
             id="password"
             value={password}
             onChange={(event) => setPassword(event.target.value)}
-            placeholder="Потврди Лозинка"
+            placeholder=" Лозинка"
             className="input"
           />
         </div>
 
         <div>
-          <button className="button" onClick={handleSubmit}>
-            Најава
+          <button className="button" type="submit" disabled={isLoading}>
+            {isLoading ? 'Најава ....' : 'Се Најавувам '}
+       
           </button>
         </div>
-      </div>
+      </form>
       <div className="div1">
         <a href="resetpassword">
           <p>ја заборави лозинката?</p>

@@ -9,6 +9,7 @@ import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 import "../assets/TrucksOnTheRoad.css";
 import { useNavigate } from "react-router-dom";
+import { Container } from "@mui/material";
 function createData(name, calories, fat, carbs, protein) {
   return { name, calories, fat, carbs, protein };
 }
@@ -27,6 +28,7 @@ const UnloadedTrucks = () => {
     navigate("/truckdetails");
   };
   return (
+    <Container>
     <div>
       <div className="info5">
         <FaTruckMoving
@@ -35,15 +37,16 @@ const UnloadedTrucks = () => {
         <h2>Нетоварени Возила</h2>
       </div>
       <div className="table">
+     
         <TableContainer component={Paper}>
-          <Table sx={{ minWidth: 650 }} aria-label="simple table">
+          <Table aria-label="simple table"> 
             <TableHead>
               <TableRow>
-                <TableCell>Dessert (100g serving)</TableCell>
-                <TableCell align="right">Calories</TableCell>
-                <TableCell align="right">Fat&nbsp;(g)</TableCell>
-                <TableCell align="right">Carbs&nbsp;(g)</TableCell>
-                <TableCell align="right">Protein&nbsp;(g)</TableCell>
+                <TableCell>Dessert</TableCell>
+                <TableCell >Calories</TableCell>
+                <TableCell >Fat&nbsp;(g)</TableCell>
+                <TableCell >Carbs&nbsp;(g)</TableCell>
+                <TableCell >Protein&nbsp;(g)</TableCell>
               </TableRow>
             </TableHead>
             <a href="selectedrecord">
@@ -51,16 +54,16 @@ const UnloadedTrucks = () => {
                 {rows.map((row) => (
                   <TableRow
                     key={row.name}
-                    sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
+                    // sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
                     onClick={Click}
                   >
                     <TableCell component="th" scope="row">
                       {row.name}
                     </TableCell>
-                    <TableCell align="right">{row.calories}</TableCell>
-                    <TableCell align="right">{row.fat}</TableCell>
-                    <TableCell align="right">{row.carbs}</TableCell>
-                    <TableCell align="right">{row.protein}</TableCell>
+                    <TableCell >{row.calories}</TableCell>
+                    <TableCell >{row.fat}</TableCell>
+                    <TableCell >{row.carbs}</TableCell>
+                    <TableCell >{row.protein}</TableCell>
                   </TableRow>
                 ))}
               </TableBody>
@@ -69,6 +72,7 @@ const UnloadedTrucks = () => {
         </TableContainer>
       </div>
     </div>
+    </Container>
   );
 };
 

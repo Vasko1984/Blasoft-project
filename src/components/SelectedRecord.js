@@ -10,7 +10,7 @@ const SelectedRecord = () => {
       <><div className="dash">
       <div className="dashboard1">
         <FaListAlt
-          style={{ marginLeft: -10, marginTop: 20, marginRight: 10 }} />
+          style={{ marginLeft: -10,width:"30px",height:"30px", marginRight: 10 }} />
         <h2>Prikazana zadaca: Terasteel</h2>
       </div>
       <BasicButtonGroup />

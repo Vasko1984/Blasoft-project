@@ -67,10 +67,10 @@ const ChooseNewPassword = () => {
       <div className="h1">
         <img src={Logo} alt="something" className="img" />
 
-        <div>
+      </div>
+        <div style={{paddingTop:"15px",paddingBottom:"15px",paddingLeft:"582px"}}>
           <h1>LIBERTY</h1>
         </div>
-      </div>
       <div className="h3">
         <h3>Избери нова лозинка</h3>
       </div>

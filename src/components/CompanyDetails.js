@@ -7,6 +7,7 @@ import Checkbox from "@mui/material/Checkbox";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import Box from "@mui/material/Box";
 import FormGroup from "@mui/material/FormGroup";
+import { useNavigate } from "react-router-dom";
 const CompanyDetails = () => {
   const [checked, setChecked] = React.useState(false);
   const [checked1, setChecked1] = React.useState(false);
@@ -24,17 +25,20 @@ const CompanyDetails = () => {
   const [checked13, setChecked13] = React.useState(false);
   const [checked14, setChecked14] = React.useState(false);
   const [checked15, setChecked15] = React.useState(false);
-
+const navigate = useNavigate();
   return (
+  
     <div>
       <div className="info5">
         <FaUser
-          style={{ width: "40px", height: "40px", marginRight: "15px" }}
+          style={{ width: "35px", height: "35px", marginRight: "15px" }}
         />
         <h2>Едитирај Транспортер :</h2>
-        <button className="nazad-na-lista">
+     
+        <button className="nazad-na-lista" onClick={() => navigate("/companies")}>
           <GrOrderedList /> назад на листата
         </button>
+      
       </div>
       <div className="detali">
         <h2>Детали</h2>

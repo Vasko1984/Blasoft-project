@@ -30,11 +30,11 @@ const EditDestination = () => {
         <div className="info5">
           <FaMapMarkerAlt
             style={{
-              width: "20px",
-              height: "20px",
+              width: "35px",
+              height: "35px",
               marginRight: "20px",
               marginLeft: "15px",
-              marginTop: "18px",
+             
             }}
           />
           <h2>Едитирај Дестинација:</h2>

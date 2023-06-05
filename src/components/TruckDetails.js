@@ -3,15 +3,18 @@ import { GrBladesVertical } from "react-icons/gr";
 import Button from "@mui/material/Button";
 import "../assets/TruckDetails.css";
 import { IoChatbubblesOutline } from "react-icons/io5";
+import { Container } from "@mui/material";
+import { useNavigate } from "react-router-dom";
 const TruckDetails = () => {
+  const navigate = useNavigate();
   return (
-    <div>
+    <Container>
       <div className="dash">
         <div className="dashboard1">
           <GrBladesVertical
             style={{
               marginLeft: -10,
-              marginTop: 15,
+            marginTop:"5px",
               marginRight: 10,
               width: "25px",
               height: "25px",
@@ -20,11 +23,11 @@ const TruckDetails = () => {
           <h2>LE 23451</h2>
         </div>
         <div className="styled-button">
-          <a href="selectedrecord">
-            <Button variant="contained">
+         
+            <Button variant="contained" onClick={() => navigate("/selectedrecord")}>
               <GrBladesVertical style={{ marginRight: 5 }} /> Назад
             </Button>
-          </a>
+        
         </div>
       </div>
       <div className="h2">
@@ -33,22 +36,22 @@ const TruckDetails = () => {
       <div className="div-styled">
         <div>
           <h3>Регистрација</h3>
-          <p>LE 2345</p>
+          <p style={{paddingTop:"10px"}}>LE 2345</p>
         </div>
         <div>
           <h3>Компанија </h3>
-          <p>Фершпед АД Скопје</p>
+          <p style={{paddingTop:"10px"}} >Фершпед АД Скопје</p>
         </div>
         <div>
           <h3>Термин на </h3>
-          <p>утовар петок 04.02.2022 10:00</p>
+          <p style={{paddingTop:"10px"}}>утовар петок 04.02.2022 10:00</p>
         </div>
         <div>
           <h3>Товарено </h3>
-          <p>петок 04.02.2022 12;31</p>
+          <p style={{paddingTop:"10px"}}>петок 04.02.2022 12;31</p>
         </div>
         <h3>
-          Истоварен на <button>Истоварено на </button>
+          Истоварен на <button className="istovareno-na">Истоварено на </button>
         </h3>
       </div>
       <div className="div-styled1">
@@ -63,12 +66,12 @@ const TruckDetails = () => {
         />
         <h3>Коментари (историјат на Патувањето)</h3>
         <div>
-          <a href="/lastcomments">
-          <Button variant="contained">Додај нов Коментар</Button>
-            </a>
+         
+          <Button variant="contained" style={{marginBottom:"5px"}} onClick={() => navigate("/lastcomments")}>Додај нов Коментар</Button>
+        
         </div>
       </div>
-    </div>
+    </Container>
   );
 };
 

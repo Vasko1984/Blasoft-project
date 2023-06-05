@@ -1,7 +1,7 @@
 .sidebar{
     position: absolute;
-    left: 30px;
-    top: 50px;
+    left: 50px;
+    top: 120px;
     width: 230px;
     height: 550px;
     background-color: lightblue;
@@ -17,6 +17,8 @@ margin-top:-21px;
 padding-left: 50px;
 color: rgb(46, 90, 117);
 list-style-type: none;
+text-decoration-line: none;
+cursor: pointer;
 }
 
 .table-container1{
@@ -27,3 +29,12 @@ list-style-type: none;
     right: 30px;
 } 
 
+.site-zadaci{
+    width: 908px;
+    height:60px;
+    display: flex;
+    background-color: lightgray;
+position: absolute;
+top: 110px;
+left: 367px;
+}

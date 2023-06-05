@@ -9,9 +9,9 @@ const EditCompany = () => {
     <Container>
       <div className="info5">
         <FaUser
-          style={{ width: "40px", height: "40px", marginRight: "15px" }}
+          style={{ width: "35px", height: "35px", marginRight: "15px" }}
         />
-        <h2>Едитирај Транспортер :</h2>
+        <h2>Едитирај Фирма :</h2>
         <button className="nazad-na-listata">
           <GrOrderedList /> назад на листата
         </button>
@@ -69,11 +69,12 @@ const EditCompany = () => {
           />
         </div>
       </FormGroup>
-
+<a href="/companidetails">
       <button className="zacuvaj">
         <BsCheckLg style={{ paddingRight: "5px" }} />
         Зачувај
       </button>
+</a>
     </Container>
   );
 };

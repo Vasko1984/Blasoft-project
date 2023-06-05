@@ -6,12 +6,12 @@ const TitleOfTheTask = () => {
     <div>
       <div className="info4">
         <div className="info5">
-          <FaTruckMoving style={{ width: "50px", marginTop: "20px" }} />
+          <FaTruckMoving style={{ width: "35px",height:"35px",marginRight:"20px" }} />
           <h4>Сите возила</h4>
         </div>
         <BasicTable />
         <div className="footer">
-          <h4>Товарени/Потребни камиони : 0/2</h4>
+          <p>Товарени/Потребни камиони : 0/2</p>
         </div>
       </div>
     </div>

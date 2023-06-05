@@ -4,9 +4,10 @@ import Button from "@mui/material/Button";
 import "../assets/TruckDetails.css";
 import "../assets/ConfirmLoading.css";
 import { IoChatbubblesOutline } from "react-icons/io5";
+import { Container } from "@mui/material";
 const ConfirmLoading = () => {
   return (
-    <div>
+    <Container>
       <div className="dash">
         <div className="dashboard1">
           <GrBladesVertical
@@ -21,9 +22,9 @@ const ConfirmLoading = () => {
           <h2>LE 23451</h2>
         </div>
         <div className="styled-button">
-          <a href="selectedrecord">
+          <a href="/selectedrecord">
             <Button variant="contained">
-              <GrBladesVertical style={{ marginRight: 5 }} /> Назад
+              <GrBladesVertical style={{  }} /> Назад
             </Button>
           </a>
         </div>
@@ -60,12 +61,12 @@ const ConfirmLoading = () => {
             marginRight: "10px",
           }}
         />
-        <h3>Коментари (историјат на Патувањето)</h3>
+        <h3 style={{paddingTop:"5px"}}>Коментари (историјат на Патувањето)</h3>
         <div>
           <Button variant="contained">Додај нов Коментар</Button>
         </div>
       </div>
-    </div>
+    </Container>
   );
 };
 

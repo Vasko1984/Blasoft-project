@@ -9,7 +9,7 @@ position: absolute;
 right: 30px;
 text-align: center;
 text-decoration: none;
-margin-top: 10px;
+
 background-color: rgb(70, 70, 162);
 
 }
@@ -24,7 +24,7 @@ position: absolute;
 right: 100px;
 text-align: center;
 text-decoration: none;
-margin-top: 10px;
+
 background-color: rgb(70, 70, 162);
 
 }
@@ -56,7 +56,7 @@ background-color: rgb(70, 70, 162);
     text-align: center;
 }
 .transport{
-  padding-left:220px;
+   padding-left:140px; 
   font-family: 'Times New Roman', Times, serif;
 padding-top: 30px;
 

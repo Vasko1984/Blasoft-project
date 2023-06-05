@@ -4,8 +4,10 @@ import { GrBladesVertical } from "react-icons/gr";
 import Button from "@mui/material/Button";
 import { IoChatbubblesOutline } from "react-icons/io5";
 import "../assets/CommentNote.css";
+import { useNavigate } from "react-router-dom";
 
 const CommentNote = () => {
+  const navigate = useNavigate();
   return (
      <Container >
       <div>
@@ -23,11 +25,11 @@ const CommentNote = () => {
             <h2>LE 23451</h2>
           </div>
           <div className="styled-button2">
-            <a href="selectedrecord">
-              <Button variant="contained" >
+           
+              <Button variant="contained" onClick={() => navigate("/selectedrecord")}>
                 <GrBladesVertical style={{ marginRight: 5 }} /> Назад
               </Button>
-            </a>
+          
           </div>
         </div>
         <div className="h2">
@@ -69,7 +71,7 @@ const CommentNote = () => {
               marginRight: "10px",
             }}
           />
-          <h3>Коментари (историјат на Патувањето)</h3>
+          <h3 style={{paddingTop:"10px"}}>Коментари (историјат на Патувањето)</h3>
           <div className="dodaj-nov-komentar">
             <Button variant="contained">Додај нов Коментар</Button>
           </div>

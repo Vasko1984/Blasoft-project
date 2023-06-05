@@ -8,6 +8,7 @@ import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 import { Container } from "@mui/material";
+import { useNavigate } from "react-router-dom";
 
 
 const rows = [
@@ -25,14 +26,14 @@ function createData(name, time) {
   return { name, time };
 }
 const LastComments = () => {
-
+const navigate = useNavigate();
   return (
     <Container>
       <div className="info5">
         <IoChatbubblesOutline
           style={{
             marginLeft: "60px",
-            marginTop: "15px",
+           
             width: "30px",
             height: "30px",
             marginRight: "20px",
@@ -61,7 +62,8 @@ const LastComments = () => {
                 {rows.map((row) => (
                  
                   <TableRow
-                 
+                  onClick={() => navigate("/commentnote")}
+                 style={{cursor:"pointer"}}
                     key={row.name}
                     sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
                   >

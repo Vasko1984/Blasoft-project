@@ -6,16 +6,16 @@ import TableContainer from "@mui/material/TableContainer";
 import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
-import DropDown from "./DropDown";
+
 import SelectForm1 from "./SelectForm1";
 
-function createData(name, calories, fat) {
-  return { name, calories, fat };
+function createData(name, calories) {
+  return { name, calories};
 }
 
 const rows = [
-  createData("truck1", 159, 6.0, 4.0),
-  createData("truck2", 237, 9.0, 4.3),
+  createData("truck1", 159),
+  createData("truck2", 237),
 ];
 
 const BasicTable1 = () => {
@@ -39,9 +39,9 @@ const BasicTable1 = () => {
               <button>otvori</button>
 
               <TableCell align="right">{row.calories}</TableCell>
-              <TableCell align="right">{row.fat}</TableCell>
+              
               <SelectForm1 />
-              {/* <DropDown/> */}
+           
             </TableRow>
           ))}
         </TableBody>

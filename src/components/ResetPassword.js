@@ -13,10 +13,10 @@ const ResetPassword = () => {
       <div className="h1">
         <img src={Logo} alt="something" className="img" />
 
-        <div>
+      </div>
+        <div style={{paddingTop:"15px",paddingBottom:"15px",paddingLeft:"582px"}}>
           <h1>LIBERTY</h1>
         </div>
-      </div>
       <div className="h">
         <h3>Ресетирање на лозинката</h3>
       </div>
@@ -36,7 +36,7 @@ const ResetPassword = () => {
       <button className="button1">Ресетирај</button>
 
       <div className="div1">
-        <a href="">
+        <a href="/">
           <p>се сети на лозинката.Најави се</p>
         </a>
       </div>

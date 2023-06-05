@@ -54,7 +54,7 @@ const TaskForm = () => {
       target: { value },
     } = event;
     setPersonName(
-      // On autofill we get a stringified value.
+    
       typeof value === "string" ? value.split(",") : value
     );
   };
@@ -65,10 +65,10 @@ const TaskForm = () => {
         <div className="info5">
           <FaList
             style={{
-              width: "20px",
-              height: "20px",
+              width: "35px",
+              height: "35px",
               marginRight: "15px",
-              paddingTop: "15px",
+             paddingTop:"10px"
             }}
           />
           <h2>Додади нова задача</h2>
